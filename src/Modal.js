@@ -7,7 +7,7 @@ const propTypes = {
 }
 
 const defaultProps = {
-	onSubmit: null,
+	onSubmit: () => {},
 }
 
 export default class Modal extends Component {
@@ -15,12 +15,8 @@ export default class Modal extends Component {
 		return (
 			<div className="Modal">
 				<form onSubmit={this.props.onSubmit} className="ModalForm">
-					<Input id="name" type="text" placeholder="Jack-Edward Oliver" />
-					<Input
-						id="username"
-						type="email"
-						placeholder="mrjackolai@gmail.com"
-					/>
+					<Input id="name" type="text" placeholder="Andrei Voicu" />
+					<Input id="username" type="email" placeholder="dreiv@gmail.com" />
 					<Input id="password" type="password" placeholder="password" />
 					<button>Log in</button>
 				</form>

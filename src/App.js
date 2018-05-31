@@ -16,8 +16,9 @@ class App extends Component {
 		})()
 	}
 
-	handleSubmit = () => {
-		console.log('submit')
+	handleSubmit = evt => {
+		this.setState({ mounted: false })
+		evt.preventDefault()
 	}
 
 	render() {
