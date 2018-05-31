@@ -11,7 +11,7 @@
 .Input label {
 	transition: opacity 0.5s ease;
 
-	opacity: 0.1;
+	opacity: 0.5;
 
 	font-family: FontAwesome;
 	font-size: 0.8125rem;
@@ -24,14 +24,12 @@
 
 	width: 1.875rem;
 	height: 1.875rem;
-
-	color: #fffce8;
 }
 
 .Input input {
 	flex: 1 0 auto;
 
-	color: #fffce8;
+	color: var(--cosmiclatte);
 	border: 0;
 	outline: none;
 	background: transparent;

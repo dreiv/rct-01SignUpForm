@@ -1,28 +1,33 @@
-@import "https://fonts.googleapis.com/css?family=Lato:100, 300, 400, 700, 900";
+@import 'https://fonts.googleapis.com/css?family=Lato:100, 300, 400, 700, 900';
+
+:root {
+	--onyx: #3e363f;
+	--cinnabar: #dd403a;
+	--cosmiclatte: #fffce8;
+}
 
 body {
 	overflow: hidden;
 
 	height: 100vh;
 
-	color: #3e363f;
-	background-image: url(https://unsplash.it/1400/795);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+	animation: gradient 15s ease infinite;
+
+	color: var(--onyx);
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
 
 	font-family: Lato, sans-serif;
 }
 
-.App {
-	position: absolute;
-	top: 0;
-	left: 0;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	width: 100vw;
-	height: 100vh;
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
