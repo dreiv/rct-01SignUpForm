@@ -1,0 +1,58 @@
+.Input {
+	display: flex;
+	flex-direction: row-reverse;
+
+	margin-bottom: 0.3125rem;
+	padding-bottom: 0.1875rem;
+
+	border-bottom: 0.0625rem solid rgba(255, 252, 232, 0.1);
+}
+
+.Input label {
+	transition: opacity 0.5s ease;
+
+	opacity: 0.1;
+
+	font-family: FontAwesome;
+	font-size: 0.8125rem;
+}
+
+.Input label::before {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 1.875rem;
+	height: 1.875rem;
+
+	color: #fffce8;
+}
+
+.Input input {
+	flex: 1 0 auto;
+
+	color: #fffce8;
+	border: 0;
+	outline: none;
+	background: transparent;
+
+	font-family: Lato, sans-serif;
+	font-size: 0.875rem;
+	font-weight: 300;
+}
+
+.Input input:focus ~ label {
+	opacity: 1;
+}
+
+.Input input[type='text'] ~ label::before {
+	content: '👤';
+}
+
+.Input input[type='email'] ~ label::before {
+	content: '📨';
+}
+
+.Input input[type='password'] ~ label::before {
+	content: '🔑';
+}

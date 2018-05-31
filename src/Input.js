@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import './Input.css'
 
 const propTypes = {
 	id: PropTypes.string,
@@ -17,16 +18,14 @@ export default class Input extends Component {
 	render() {
 		return (
 			<div className="Input">
-				<label htmlFor={this.props.id}>
-					{`${this.props.id}: `}
-					<input
-						id={this.props.id}
-						autoComplete="false"
-						required
-						type={this.props.type}
-						placeholder={this.props.placeholder}
-					/>
-				</label>
+				<input
+					id={this.props.id}
+					autoComplete="false"
+					required
+					type={this.props.type}
+					placeholder={this.props.placeholder}
+				/>
+				<label htmlFor={this.props.id} />
 			</div>
 		)
 	}

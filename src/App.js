@@ -3,7 +3,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import './App.css'
 import Modal from './Modal'
 
-class App extends Component {
+export default class App extends Component {
 	constructor(props) {
 		super(props)
 
@@ -11,9 +11,7 @@ class App extends Component {
 	}
 
 	componentDidMount() {
-		;(() => {
-			this.setState({ mounted: true })
-		})()
+		;(() => this.setState({ mounted: true }))()
 	}
 
 	handleSubmit = evt => {
@@ -41,5 +39,3 @@ class App extends Component {
 		)
 	}
 }
-
-export default App

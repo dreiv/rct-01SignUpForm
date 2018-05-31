@@ -1,5 +1,28 @@
+@import "https://fonts.googleapis.com/css?family=Lato:100, 300, 400, 700, 900";
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+	overflow: hidden;
+
+	height: 100vh;
+
+	color: #3e363f;
+	background-image: url(https://unsplash.it/1400/795);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	font-family: Lato, sans-serif;
+}
+
+.App {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100vw;
+	height: 100vh;
 }
